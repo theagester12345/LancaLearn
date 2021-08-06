@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/cv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:cardElevation="4dp"
+        android:foreground="?android:selectableItemBackground"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="100dp"
+                android:id="@+id/icon_img"
+                android:scaleType="fitXY"
+                android:layout_height="100dp"/>
+
+
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/icon_img"
+                android:id="@+id/name"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/name"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/name_input"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/icon_img"
+                android:id="@+id/email"
+                android:text="email:"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_alignTop="@id/email_input"
+                android:paddingStart="15dp"
+                android:layout_below="@id/name"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/email"
+                android:text=""
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:id="@+id/email_input"
+                android:layout_below="@id/name_input"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/icon_img"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:drawableTint="#fff"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/call"
+                    android:drawableBottom="@drawable/ic_baseline_local_phone_24"
+                    android:layout_height="match_parent"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:id="@+id/message_btn"
+                    android:layout_weight="0.5"
+                    android:drawableTint="#fff"
+                    android:drawableBottom="@drawable/ic_baseline_message_24"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

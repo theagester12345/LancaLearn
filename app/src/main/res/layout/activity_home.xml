@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#000"
+            android:padding="10dp"
+            android:layout_height="300dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="Portal"
+                android:textColor="#fff"
+                android:id="@+id/portal"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/portal"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/logout"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:scaleType="centerCrop"
+                android:elevation="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_centerInParent="true"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_account_white"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:text="Welcome"
+                android:layout_below="@id/profile_image"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/welcome"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/welcome"
+                android:textSize="18sp"
+                android:text="Name"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/course"
+                android:textSize="18sp"
+                android:text="COURSE"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Choose a Course from Below "
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/recyclerView"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:id="@+id/view_profile"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:text="View Profile"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

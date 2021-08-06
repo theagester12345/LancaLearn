@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/cv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:cardElevation="4dp"
+        android:foreground="?android:selectableItemBackground"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content">
+
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="120dp"
+                    android:id="@+id/icon"
+                    android:scaleType="fitXY"
+                    android:layout_height="120dp"/>
+
+
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:id="@+id/name"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/name"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/name_input"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:id="@+id/code"
+                android:text="Code:"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_alignTop="@id/code_input"
+                android:paddingStart="15dp"
+                android:layout_below="@id/name"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/code"
+                android:text=""
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:id="@+id/code_input"
+                android:layout_below="@id/name_input"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

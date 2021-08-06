@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874986464998",
+    "project_id": "lanca-learn",
+    "storage_bucket": "lanca-learn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874986464998:android:534909efd365c218debd27",
+        "android_client_info": {
+          "package_name": "com.example.lancalearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874986464998-e81i0kburqpj554rts4hl8cbfifqrs2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATifSFIWBz0DvzNfpI_9zCBRbVL1BCy6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874986464998-e81i0kburqpj554rts4hl8cbfifqrs2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

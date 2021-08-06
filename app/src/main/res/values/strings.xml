@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LancaLearn</string>
+
+    <!--    Course-->
+    <string-array name="course">
+        <item>Choose a course...</item>
+        <item>Accounting</item>
+        <item>Computer Science</item>
+        <item>Business Management</item>
+        <item>Marketing</item>
+        <item>Politics</item>
+        <item>Economics</item>
+        <item>Law</item>
+    </string-array>
+
+
+    <!--    Year-->
+    <string-array name="year">
+        <item>Choose a Year...</item>
+        <item>Year 1</item>
+    </string-array>
+
+
+    <string-array name="profile">
+        <item>Choose a profile...</item>
+        <item>Student</item>
+        <item>Tutor</item>
+    </string-array>
+
+    <string name="profile_heading">Choose a profile...</string>
+    <string name="year_heading">Choose a Year...</string>
+    <string name="course_heading">Choose a course...</string>
+    <string name="email_error">Enter valid Email Address</string>
+    <string name="password__error">Password require a capital letter, aspecial character and should be at least 8 characters long</string>
+</resources>
